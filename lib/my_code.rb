@@ -11,6 +11,7 @@ end
 
 def reduce(source_array, starting_point = 0)
   i = 0
+  sum = 0
   while i < source_array.length
     if source_array[i].is_a? Integer
       sum += yield(source_array[i], starting_point)
