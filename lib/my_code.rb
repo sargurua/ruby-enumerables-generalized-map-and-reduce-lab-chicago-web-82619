@@ -22,7 +22,7 @@ def reduce(source_array, starting_point = 0)
       if !yield(source_array[i])
         sum = false
       else
-        sum = true
+        return true
       end
     end
     i += 1
