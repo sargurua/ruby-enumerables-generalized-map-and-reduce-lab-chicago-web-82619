@@ -18,6 +18,11 @@ def reduce(source_array, starting_point = 0)
       if starting_point > 0
         starting_point = 0
       end
+    else
+      if yield(source_array[i])
+        sum = true
+      else
+        sum = false
     end
     i += 1
   end
