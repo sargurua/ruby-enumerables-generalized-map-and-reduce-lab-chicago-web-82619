@@ -23,7 +23,6 @@ def reduce(source_array, starting_point = 0)
         sum = true
       else
         sum = false
-        break
       end
     end
     i += 1
