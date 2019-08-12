@@ -19,7 +19,7 @@ def reduce(source_array, starting_point = 0)
         starting_point = 0
       end
     else
-      if !yield(source_array[i])
+      if !yield(source_array[i], starting_point)
         sum = false
       else
         return true
